@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+a, li {
+  text-decoration: none;
+list-style: none;
+}
+
+body{
+  background-color: #0d0d0f;
+
+}
