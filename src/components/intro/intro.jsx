@@ -10,7 +10,7 @@ const Intro = () => {
             <div className="container mx-auto pt-[282px] pb-16">
                 <div>
                     <div className="px-4 py-1 bg-black text-white w-[69px] rounded-2xl flex items-center justify-center">
-                        Series
+                        Movies
                     </div>
                     <h1 className="bold text-3xl py-4 text-white mb-2">
                         The Last of Us Season 1                        
