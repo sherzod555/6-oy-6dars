@@ -1,6 +1,7 @@
 import { useState } from "react";
 import MovieCard from "../episodes/movie-card";
 import { useTVContext } from "../../contexts/tv.context";
+import "./tvlist.scss"
 
 const TVList = () => {
   const [currentPage, setCurrentPage] = useState(1);
@@ -35,7 +36,7 @@ const TVList = () => {
       <div className="grid gap-4 grid-cols-4">
         {renderedTVList &&
           renderedTVList?.map((movie) => (
-            <div className="w-[350px] h-[197px]" key={movie.id}>
+            <div className="w-[350px] h-[197px] rounded-2xl box_item" key={movie.id}>
               <MovieCard imgWidth={350} imgHeight={197} movie={movie} />
             </div>
           ))}

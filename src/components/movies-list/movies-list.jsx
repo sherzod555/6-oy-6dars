@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import MovieCard from "../episodes/movie-card";
 import Header from "../header/header";
+import "./movieslist.scss"
 
 const MoviesList = () => {
   const [movies, setMovies] = useState();
@@ -32,10 +33,10 @@ const MoviesList = () => {
   return (
     <div className="container px-10 mx-auto">
       <Header onChange={onChange} isSearchable />
-      <div className="grid gap-4 grid-cols-3">
+      <div className="grid gap-4 grid-cols-4">
         {movies &&
           movies.results.map((movie) => (
-            <div className="w-[350px] h-[197px]">
+            <div className="w-[350px] h-[197px] rounded-2xl box_item">
               <MovieCard imgWidth={350} imgHeight={197} movie={movie} />
             </div>
           ))}
